@@ -10,8 +10,35 @@
 
 .el_contenedor{
     margin: auto;
+    width: 80%;
     text-align: center;
     font-family: "ubuntu-regular";
+}
+.el_menu{
+    padding: 15px;
+}
+
+.slider{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;    
+    
+    animation: change 20s infinite;
+    animation-direction: alternate;
+}
+
+.slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider img{
+    width: 100%;
 }
 
 a{
@@ -23,14 +50,52 @@ a{
 .el_flex{
     display: flex;
     flex-flow: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
 .el_flexitem{
     color: white;
     border: 5px solid ;
-    text-align: start;
+}
+h4, p, h2 {
+    margin: 0;
+    margin-left: 15px;
+    text-align: left;
+
+   
+}
+h2{
+    margin-top: 3px;
+    font-size: 28px;  
+    width: 95px;
+    background: rgb(255, 230, 6);
+    box-shadow: 2px 2px 0 0 rgb(248, 2, 2);
+    box-sizing: border-box;
+    
+    
+}
+.estrellas{
+    color: rgb(255, 230, 6);
+    text-align: left;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    
+    
+}
+#text{
+    color: rgb(0, 0, 0);
 }
 
+@keyframes change{
+    0%{ margin-left: 0; }
+    20%{ margin-left: 0;  }
+    
+    25%{ margin-left: -100%;  }
+    45%{ margin-left: -100%;  }
 
+    50%{ margin-left: -200%;  }
+    70%{ margin-left: -200%;  }
 
+    75%{ margin-left: -300%;  }
+    100%{ margin-left: -300%;  }
+}
