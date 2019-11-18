@@ -1,0 +1,15 @@
+/* Login + Signup CSS by Eduardo Correia */
+
+
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url(/assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: "ubuntu-light";
+    src: url(/assets/fonts/Ubuntu-Light.ttf);
+}
+
+body {
+    font-family: "ubuntu-regular";
+}
