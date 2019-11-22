@@ -8,43 +8,127 @@
         url('../fonts/ubuntu-regular.svg#svgFontName') format('svg'); /* Legacy iOS */  
 }
 
+li{
+    list-style: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
 
 .el_contenedor{
-    margin: 0px auto;
-    width: 1200px;
+    margin: 0 auto;
     text-align: center;
     font-family: "ubuntu-regular";
-}
-.el_menu{
-    padding: 15px;
+    padding-top: 25px;
+    font-size: 16px;
 }
 
-.slider{
+.el_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.el_menu{
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.el_itemmenu {
+    display:inline-block;
+    position: relative;
+    text-align: center;
+    
+}
+
+.el_itemmenu a {
+    color: #000;
+    font-weight: 700;
+    padding:15px;
+}
+
+.el_itemmenu:hover .el_caixasubmenu {
+    display: flex;
+}
+
+.el_itemmenu a:hover {
+    text-decoration: none;
+}
+
+.bg_icones {
+    background-color: #ededed;
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    display: block;
+    transition: width .3s, height .3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.el_icones li:hover .bg_icones {
+    width: 50px;
+    height: 50px;
+}
+
+.el_icones li {
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.el_icones li:last-child {
+    margin-right: 0px;
+}
+
+.el_icones .fa {
+    font-size: 21px;
+    color: #000;
+    position: absolute;
+    width: 21px;
+    text-align: center;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.el_slider{
     width: 100%;
     margin: auto;
     overflow: hidden;
     padding-bottom: 15px;
 }
-.slider ul{
+.el_slider ul{
     display: flex;
     padding: 0;
     width: 400%;    
-    
+
     animation: change 20s infinite;
     animation-direction: alternate;
 }
 
-.slider li {
+.el_slider li {
     list-style: none;
     width: 100%;
 }
 
-.slider img{
+.el_slider img{
     width: 100%;
 }
 
 .el_texmenu{
- color: rgb(85, 81, 81);
+    color: rgb(85, 81, 81);
     text-decoration: none;
     padding-left: 15px;
 }
@@ -52,50 +136,48 @@
 .el_flex{
     display: flex;
     flex-flow: wrap;
+    flex-direction: row;
     justify-content: space-around;  
 }
+
 .el_flexitem{
+    margin: 0;
     color: white;
     border: 5px solid ;
 }
+
 h4, p, h2 {
     margin: 0;
     margin-left: 15px;
     text-align: left;
+}
 
-   
-}
-* {
-    box-sizing: border-box;
-}
 h2{
     margin-top: 3px;
     font-size: 28px;  
     width: 95px;
     background: rgb(255, 230, 6);
     box-shadow: 2px 2px 0 0 rgb(248, 2, 2);
-  
-    
 }
+
 .el_estrellas{
     color: rgb(255, 230, 6);
     text-align: left;
     padding-top: 5px;
     padding-bottom: 25px;
     padding-left: 15px;
-    
-    
+        
 }
 #text{
     color: rgb(0, 0, 0);
 }
 
 .el_novidade{
-    background: brown;
+    background: rgb(248, 2, 2);
     color: white;
     margin: 0;
-    padding: 8px;
-    width: 20%;
+    padding: 3px;
+    width: 14.5%;
     margin-left: 15px;
     text-align: left;
     border-radius: 8px;
