@@ -1,0 +1,63 @@
+/*
+relative
+lupa dentro da div posiçao asoluta
+dar margem
+dar top 50%
+*/
+
+/*
+criar class que vou por em todos
+e depois em cada um tem a classe especifica para cada um
+mas a classe que etransvelas nos tres tem as propiedades repetidas.
+*/
+
+.pa_pesquisa {
+	position: relative;
+}
+
+.pa_pesquisa_input {
+	background-color: #ccc;
+	width: 100%;
+	border-radius: 25px;
+	height: 38px;
+	border:0px;
+	padding-left: 40px;
+	border:1px solid #ccc;
+}
+
+.pa_pesquisa_input:focus {
+	background-color: #fff;
+	border:1px solid #0058a3;
+}
+
+.pa_icon {
+	color: black;
+	position: absolute;
+	z-index: 1;
+	top:50%;
+	transform:translate(-50%,-50%)		
+}
+
+.pa_search{
+	left: 25px;	
+}
+
+.pa_arrow-right{
+	right: 5px;
+	border-left: 1px solid #000;
+	padding-left: 12px;
+}
+
+.pa_times {
+	right: 50px;	
+}
+/*
+.pa_arrow-right_icon::before{
+	color: red;
+	content: "";	
+	position: absolute;
+	border-left: 1px solid #000;	
+	top:50%;
+	transform:translate(-50%,-50%)	
+}
+*/
